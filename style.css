@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--very-light-gray);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100vh;
+}
+
+.card-container {
+  margin: 1.5rem;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: auto;
+  width: 57.5rem;
+  height: auto;
+}
+
+.card {
+  padding: 2.5rem;
+}
+
+.card-image {
+  margin-bottom: 2.5rem;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.card-text {
+  color: var(--transparent-white);
+  font-weight: 400;
+  margin-bottom: 5rem;
+  line-height: 2rem;
+}
+
+.card-btn {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--very-light-gray);
+  padding: 1rem 3.125rem;
+  border: 2px solid var(--transparent-white);
+  border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: transparent;
+  color: var(--very-light-gray);
+}
+
+.bright-orange-bg {
+  background-color: var(--bright-orange);
+}
+
+.dark-cyan-bg {
+  background-color: var(--dark-cyan);
+}
+
+.very-dark-cyan-bg {
+  background-color: var(--very-dark-cyan);
+}
+
+.bright-orange {
+  color: var(--bright-orange);
+}
+
+.dark-cyan {
+  color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 5.625rem 1.5rem;
+  }
+
+  .card-text {
+    margin-bottom: 1rem;
+  }
+
+  .card-btn {
+    padding: 0.75rem 2rem;
+  }
+
+  .top-border-radius {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .bottom-border-radius {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
